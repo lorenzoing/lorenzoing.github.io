@@ -4,57 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorenzo Gómez - Ingeniero Mecánico</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Lorenzo Rafael Gómez Solano</h1>
-            <ul>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Lorenzo Gómez</h1>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#educacion">Educación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="inicio">
-            <h2>Ingeniero Mecánico</h2>
-            <p>Especialista en coordinación de proyectos y solución de problemas</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Ingeniero Mecánico</h1>
+            <p>Especializado en Gestión de Proyectos, Automatización Industrial y Análisis de Datos</p>
+            <a href="#contacto" class="btn btn-primary">Contactarme</a>
+            <a href="#acerca" class="btn btn-secondary">Conoce más</a>
+        </div>
+    </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Soy un profesional con experiencia en coordinación de proyectos...</p>
-        </section>
+    <!-- Acerca de -->
+    <section id="acerca" class="about">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un profesional con experiencia en la coordinación de proyectos. Destaco por mi capacidad 
+                        para planificar actividades e ideas y mi habilidad en la resolución de problemas, así como por 
+                        mi dominio de herramientas tecnológicas.
+                    </p>
+                    <p>
+                        Con formación en Ingeniería Mecánica y diversos diplomados especializados, cuento con las 
+                        competencias necesarias para contribuir en equipos multidisciplinarios y liderar procesos de mejora continua.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>+5</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Proyectos Completados</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Certificaciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Planificación estratégica</li>
-                <li>Resolución de problemas</li>
-                <li>Diseño mecánico (SolidWorks, AutoCAD)</li>
-                <li>Power BI</li>
-                <li>JavaScript, HTML/CSS</li>
-            </ul>
-        </section>
-
-        <section id="experiencia">
+    <!-- Experiencia -->
+    <section id="experiencia" class="experience">
+        <div class="container">
             <h2>Experiencia Laboral</h2>
-            <article>
-                <h3>Coordinador de Proyectos - Hamilton Colombia</h3>
-                <p>2024 - Presente</p>
-            </article>
-        </section>
-    </main>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Coordinador de Proyectos</h3>
+                        <span class="company">Hamilton Colombia</span>
+                    </div>
+                    <p class="location">Montería, Colombia</p>
+                    <p class="period">Diciembre 2024 - Enero 2026</p>
+                    <ul class="responsibilities">
+                        <li>Lideración de la supervisión de productividad y desempeño de equipos</li>
+                        <li>Optimización de la toma de decisiones mediante dashboards en Power BI</li>
+                        <li>Gestión de comunicación técnica y operativa</li>
+                        <li>Garantía del cumplimiento de cronogramas y estándares de calidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: lorenzogomez1007@gmail.com</p>
-        <p>Teléfono: (+57) 300-371-1391</p>
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <!-- Planificación -->
+                <div class="skill-category">
+                    <h3>Planificación Estratégica</h3>
+                    <ul>
+                        <li>Planificación estratégica</li>
+                        <li>Resolución de problemas y comunicación efectiva</li>
+                        <li>Gestión de proyectos</li>
+                    </ul>
+                </div>
+
+                <!-- Diseño y Técnico -->
+                <div class="skill-category">
+                    <h3>Diseño y Mecánica</h3>
+                    <ul>
+                        <li>Diseño mecánico (SolidWorks - AutoCAD)</li>
+                        <li>Mantenimiento y reparación de equipos eléctricos y electrónicos</li>
+                        <li>Metrología dimensional aplicada</li>
+                    </ul>
+                </div>
+
+                <!-- Automatización -->
+                <div class="skill-category">
+                    <h3>Automatización e Hidráulica</h3>
+                    <ul>
+                        <li>Programación Ladder (PLC)</li>
+                        <li>Desarrollo de prototipos en Arduino</li>
+                        <li>Sistemas hidráulicos industriales</li>
+                    </ul>
+                </div>
+
+                <!-- Software -->
+                <div class="skill-category">
+                    <h3>Software y Análisis</h3>
+                    <ul>
+                        <li>Dominio del paquete Office</li>
+                        <li>Análisis de datos: Power BI, Looker Studio, Excel Avanzado, MySQL</li>
+                        <li>Herramientas IA</li>
+                    </ul>
+                </div>
+
+                <!-- Programación -->
+                <div class="skill-category">
+                    <h3>Programación</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+
+                <!-- Web & IT -->
+                <div class="skill-category">
+                    <h3>Web & IT</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>APIs</li>
+                        <li>WordPress & Hosting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="education">
+        <div class="container">
+            <h2>Educación y Certificaciones</h2>
+            
+            <div class="education-section">
+                <h3 class="section-title">Grado Académico</h3>
+                <div class="education-card">
+                    <div class="edu-header">
+                        <h4>Ingeniero Mecánico</h4>
+                        <span class="institution">Universidad de Córdoba</span>
+                    </div>
+                    <p class="year">2024</p>
+                    <p class="status">Pregrado completado</p>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h3 class="section-title">Diplomados y Cursos Especializados</h3>
+                <div class="education-list">
+                    <div class="education-card">
+                        <h4>Diplomado: Eficiencia Energética Industrial</h4>
+                        <p class="institution">Universidad de Córdoba</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Bootcamp de análisis de datos nivel básico</h4>
+                        <p class="institution">Universidad Tecnológica de Bolívar</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Curso especial en AutoCAD 2D</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Curso especial en metrología dimensional aplicada mantenimiento mecánico</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Curso especial en implementación de sistemas hidráulicos en líneas industriales</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Curso especial en montaje de circuitos hidráulicos en líneas industriales</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Habilidades de comunicación en el contexto laboral</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Curso especial en comunicación asertiva y efectiva en equipos de trabajo</h4>
+                        <p class="institution">SENA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h3 class="section-title">Idiomas</h3>
+                <div class="languages">
+                    <div class="language-item">
+                        <h4>Español</h4>
+                        <p>Idioma nativo</p>
+                    </div>
+                    <div class="language-item">
+                        <h4>Inglés</h4>
+                        <p>Intermedio (B1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>(+57) 300-371-1391</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lorenzogomez1007@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Montería, Córdoba, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Lorenzo Gómez. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,291 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorenzo Gómez - Ingeniero Mecánico</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="description" content="Portafolio profesional de Lorenzo Gomez: ingenieria mecanica, gestion de proyectos, analisis de datos, dashboards, KPIs, Power BI, MySQL y automatizacion.">
+    <title>Lorenzo Gómez | Ingeniería, Proyectos y Analítica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>Lorenzo Gómez</h1>
-            </div>
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span class="brand-mark">LG</span>
+                <span>
+                    <strong>Lorenzo Gómez</strong>
+                    <small>Ingeniería · Datos · Proyectos</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Formación</a></li>
+                <li><a class="nav-cta" href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Ingeniero Mecánico</h1>
-            <p>Especializado en Gestión de Proyectos, Automatización Industrial y Análisis de Datos</p>
-            <a href="#contacto" class="btn btn-primary">Contactarme</a>
-            <a href="#acerca" class="btn btn-secondary">Conoce más</a>
-        </div>
-    </section>
-
-    <!-- Acerca de -->
-    <section id="acerca" class="about">
-        <div class="container">
-            <h2>Acerca de Mí</h2>
-            <div class="about-content">
-                <div class="about-text">
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-bg-grid" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-chart-line"></i> Portafolio profesional</span>
+                    <h1>Ingeniería mecánica aplicada a proyectos, datos y mejora operativa.</h1>
                     <p>
-                        Soy un profesional con experiencia en la coordinación de proyectos. Destaco por mi capacidad 
-                        para planificar actividades e ideas y mi habilidad en la resolución de problemas, así como por 
-                        mi dominio de herramientas tecnológicas.
+                        Conecto la planeación técnica, el análisis de datos y la visualización ejecutiva para convertir
+                        información operativa en decisiones claras, medibles y accionables.
+                    </p>
+
+                    <div class="hero-tags" aria-label="Áreas principales">
+                        <span>Power BI</span>
+                        <span>MySQL</span>
+                        <span>KPIs</span>
+                        <span>Dashboards</span>
+                        <span>Automatización</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#portafolio" class="btn btn-primary">Ver proyectos</a>
+                        <a href="mailto:lorenzogomez1007@gmail.com" class="btn btn-secondary">Contactarme</a>
+                    </div>
+                </div>
+
+                <aside class="hero-panel reveal" aria-label="Resumen visual del perfil">
+                    <div class="profile-card">
+                        <div class="profile-photo-wrap">
+                            <img src="./assets/img/lorenzo_perfil.jpg" alt="Foto profesional de Lorenzo Gómez" class="profile-photo">
+                        </div>
+                        <div class="profile-info">
+                            <span class="availability"><i class="fa-solid fa-location-dot"></i> Montería, Colombia</span>
+                            <h2>Lorenzo Gómez</h2>
+                            <p>Ingeniero Mecánico · Coordinador de Proyectos · Analítica Operativa</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-dashboard-card">
+                        <img src="./assets/img/KPI.png" alt="Vista de indicadores KPI comerciales y operativos" loading="lazy">
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="impact-strip" aria-label="Indicadores destacados">
+            <div class="container impact-grid">
+                <article class="impact-item reveal">
+                    <strong>+5</strong>
+                    <span>Años integrando operación, proyectos y tecnología</span>
+                </article>
+                <article class="impact-item reveal">
+                    <strong>15+</strong>
+                    <span>Proyectos acompañados con seguimiento y mejora</span>
+                </article>
+                <article class="impact-item reveal">
+                    <strong>10+</strong>
+                    <span>Certificaciones y cursos técnicos complementarios</span>
+                </article>
+                <article class="impact-item reveal">
+                    <strong>360°</strong>
+                    <span>Lectura técnica, financiera y visual de la gestión</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section profile-section" id="perfil">
+            <div class="container two-column">
+                <div class="section-copy reveal">
+                    <span class="section-kicker">Perfil profesional</span>
+                    <h2>Un perfil técnico con enfoque en análisis, control y toma de decisiones.</h2>
+                    <p>
+                        Soy Ingeniero Mecánico con experiencia en coordinación de proyectos, seguimiento de productividad,
+                        control de indicadores y comunicación técnica con equipos de trabajo. Mi valor diferencial está en
+                        unir visión operativa con herramientas digitales para construir tableros, reportes y modelos de datos
+                        que facilitan decisiones oportunas.
                     </p>
                     <p>
-                        Con formación en Ingeniería Mecánica y diversos diplomados especializados, cuento con las 
-                        competencias necesarias para contribuir en equipos multidisciplinarios y liderar procesos de mejora continua.
+                        El sitio está diseñado para mostrar una historia clara: formación técnica, gestión de proyectos,
+                        manejo de datos, creación de KPIs y visualización profesional de resultados.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>+5</h3>
-                        <p>Años de Experiencia</p>
-                    </div>
-                    <div class="stat">
-                        <h3>15+</h3>
-                        <p>Proyectos Completados</p>
-                    </div>
-                    <div class="stat">
-                        <h3>10+</h3>
-                        <p>Certificaciones</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experiencia -->
-    <section id="experiencia" class="experience">
-        <div class="container">
-            <h2>Experiencia Laboral</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <h3>Coordinador de Proyectos</h3>
-                        <span class="company">Hamilton Colombia</span>
-                    </div>
-                    <p class="location">Montería, Colombia</p>
-                    <p class="period">Diciembre 2024 - Enero 2026</p>
-                    <ul class="responsibilities">
-                        <li>Lideración de la supervisión de productividad y desempeño de equipos</li>
-                        <li>Optimización de la toma de decisiones mediante dashboards en Power BI</li>
-                        <li>Gestión de comunicación técnica y operativa</li>
-                        <li>Garantía del cumplimiento de cronogramas y estándares de calidad</li>
+                <div class="capability-card reveal">
+                    <h3>Lo que puedo aportar</h3>
+                    <ul class="check-list">
+                        <li>Diseño de indicadores para seguimiento operativo y financiero.</li>
+                        <li>Creación de dashboards ejecutivos y reportes de gestión.</li>
+                        <li>Análisis de datos con Excel, Power BI, Looker Studio y MySQL.</li>
+                        <li>Planeación, control de cronogramas y seguimiento de proyectos.</li>
+                        <li>Comunicación técnica entre áreas operativas y administrativas.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="skills">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <div class="skills-grid">
-                <!-- Planificación -->
-                <div class="skill-category">
-                    <h3>Planificación Estratégica</h3>
-                    <ul>
-                        <li>Planificación estratégica</li>
-                        <li>Resolución de problemas y comunicación efectiva</li>
-                        <li>Gestión de proyectos</li>
-                    </ul>
+        <section class="section portfolio-section" id="portafolio">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-kicker">Portafolio visual</span>
+                    <h2>Dashboards, KPIs, modelos de datos y análisis visual.</h2>
+                    <p>
+                        Estas piezas visuales ayudan a contar tu perfil profesional: no solo sabes operar herramientas,
+                        también sabes transformar información dispersa en sistemas de control y lectura ejecutiva.
+                    </p>
                 </div>
 
-                <!-- Diseño y Técnico -->
-                <div class="skill-category">
-                    <h3>Diseño y Mecánica</h3>
-                    <ul>
-                        <li>Diseño mecánico (SolidWorks - AutoCAD)</li>
-                        <li>Mantenimiento y reparación de equipos eléctricos y electrónicos</li>
-                        <li>Metrología dimensional aplicada</li>
-                    </ul>
-                </div>
-
-                <!-- Automatización -->
-                <div class="skill-category">
-                    <h3>Automatización e Hidráulica</h3>
-                    <ul>
-                        <li>Programación Ladder (PLC)</li>
-                        <li>Desarrollo de prototipos en Arduino</li>
-                        <li>Sistemas hidráulicos industriales</li>
-                    </ul>
-                </div>
-
-                <!-- Software -->
-                <div class="skill-category">
-                    <h3>Software y Análisis</h3>
-                    <ul>
-                        <li>Dominio del paquete Office</li>
-                        <li>Análisis de datos: Power BI, Looker Studio, Excel Avanzado, MySQL</li>
-                        <li>Herramientas IA</li>
-                    </ul>
-                </div>
-
-                <!-- Programación -->
-                <div class="skill-category">
-                    <h3>Programación</h3>
-                    <ul>
-                        <li>C++</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-
-                <!-- Web & IT -->
-                <div class="skill-category">
-                    <h3>Web & IT</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>APIs</li>
-                        <li>WordPress & Hosting</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Educación -->
-    <section id="educacion" class="education">
-        <div class="container">
-            <h2>Educación y Certificaciones</h2>
-            
-            <div class="education-section">
-                <h3 class="section-title">Grado Académico</h3>
-                <div class="education-card">
-                    <div class="edu-header">
-                        <h4>Ingeniero Mecánico</h4>
-                        <span class="institution">Universidad de Córdoba</span>
-                    </div>
-                    <p class="year">2024</p>
-                    <p class="status">Pregrado completado</p>
-                </div>
-            </div>
-
-            <div class="education-section">
-                <h3 class="section-title">Diplomados y Cursos Especializados</h3>
-                <div class="education-list">
-                    <div class="education-card">
-                        <h4>Diplomado: Eficiencia Energética Industrial</h4>
-                        <p class="institution">Universidad de Córdoba</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Bootcamp de análisis de datos nivel básico</h4>
-                        <p class="institution">Universidad Tecnológica de Bolívar</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Curso especial en AutoCAD 2D</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Curso especial en metrología dimensional aplicada mantenimiento mecánico</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Curso especial en implementación de sistemas hidráulicos en líneas industriales</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Curso especial en montaje de circuitos hidráulicos en líneas industriales</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Habilidades de comunicación en el contexto laboral</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                    <div class="education-card">
-                        <h4>Curso especial en comunicación asertiva y efectiva en equipos de trabajo</h4>
-                        <p class="institution">SENA</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="education-section">
-                <h3 class="section-title">Idiomas</h3>
-                <div class="languages">
-                    <div class="language-item">
-                        <h4>Español</h4>
-                        <p>Idioma nativo</p>
-                    </div>
-                    <div class="language-item">
-                        <h4>Inglés</h4>
-                        <p>Intermedio (B1)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>(+57) 300-371-1391</p>
+                <div class="portfolio-grid">
+                    <article class="project-card featured reveal">
+                        <button class="project-image" type="button" data-lightbox="./assets/img/app.png" aria-label="Ampliar dashboard financiero">
+                            <img src="./assets/img/app.png" alt="Dashboard financiero con balance diario y resumen del rango" loading="lazy">
+                        </button>
+                        <div class="project-body">
+                            <span class="project-type">Dashboard financiero</span>
+                            <h3>Control de movimientos y balance diario</h3>
+                            <p>
+                                Vista ejecutiva para seguimiento de ingresos, egresos, rangos de fechas y comportamiento diario.
+                                Demuestra capacidad para construir interfaces claras de análisis financiero.
+                            </p>
+                            <div class="tech-tags">
+                                <span>KPIs</span><span>Reportes</span><span>Gestión financiera</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>lorenzogomez1007@gmail.com</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <button class="project-image" type="button" data-lightbox="./assets/img/bd.png" aria-label="Ampliar modelo de base de datos">
+                            <img src="./assets/img/bd.png" alt="Modelo relacional de base de datos con múltiples tablas conectadas" loading="lazy">
+                        </button>
+                        <div class="project-body">
+                            <span class="project-type">Arquitectura de datos</span>
+                            <h3>Modelo relacional para sistema de gestión</h3>
+                            <p>
+                                Estructura de base de datos con entidades conectadas, útil para evidenciar comprensión de datos,
+                                relaciones, trazabilidad y escalabilidad de sistemas.
+                            </p>
+                            <div class="tech-tags">
+                                <span>MySQL</span><span>Modelo ER</span><span>Datos</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Montería, Córdoba, Colombia</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <button class="project-image" type="button" data-lightbox="./assets/img/grafico_barras.png" aria-label="Ampliar gráfico de barras y línea">
+                            <img src="./assets/img/grafico_barras.png" alt="Gráfico comparativo de barras y línea con valores mensuales" loading="lazy">
+                        </button>
+                        <div class="project-body">
+                            <span class="project-type">Analítica visual</span>
+                            <h3>Comparación mensual con barras y tendencias</h3>
+                            <p>
+                                Visualización para comparar valores, detectar picos y entender comportamiento por periodos.
+                                Refuerza habilidades en lectura de datos y comunicación visual.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Visualización</span><span>Tendencias</span><span>Análisis</span>
+                            </div>
                         </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <button class="project-image" type="button" data-lightbox="./assets/img/KPI.png" aria-label="Ampliar tablero de KPIs">
+                            <img src="./assets/img/KPI.png" alt="Tablero oscuro con tarjetas de KPIs comerciales y operativos" loading="lazy">
+                        </button>
+                        <div class="project-body">
+                            <span class="project-type">KPIs operativos</span>
+                            <h3>Tablero de seguimiento comercial y operativo</h3>
+                            <p>
+                                Indicadores para leads, ventas, proyectos, tickets y objetivos. Muestra dominio en seguimiento,
+                                metas, diferencias y lectura gerencial de desempeño.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Metas</span><span>Productividad</span><span>Control</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-section" id="habilidades">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-kicker">Competencias</span>
+                    <h2>Habilidades agrupadas por valor profesional.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h3>Gestión de proyectos</h3>
+                        <p>Planeación, seguimiento de actividades, gestión de cronogramas, control de avances y comunicación con equipos.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h3>Datos y BI</h3>
+                        <p>Power BI, Looker Studio, Excel avanzado, MySQL, KPIs, análisis de tendencias y construcción de reportes.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Ingeniería y mantenimiento</h3>
+                        <p>Diseño mecánico, AutoCAD, SolidWorks, metrología, mantenimiento de equipos y sistemas hidráulicos.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web, automatización e IA</h3>
+                        <p>HTML, CSS, JavaScript, WordPress, hosting, APIs, herramientas IA, Python, C++ y prototipos con Arduino.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section experience-section" id="experiencia">
+            <div class="container two-column reverse-on-mobile">
+                <div class="experience-card reveal">
+                    <span class="section-kicker">Experiencia reciente</span>
+                    <h2>Coordinador de Proyectos</h2>
+                    <div class="role-meta">
+                        <span><i class="fa-solid fa-building"></i> Hamilton Colombia</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Montería, Colombia</span>
+                        <span><i class="fa-solid fa-calendar"></i> Dic. 2024 - Ene. 2026</span>
+                    </div>
+                    <ul class="check-list">
+                        <li>Supervisión de productividad y desempeño de equipos.</li>
+                        <li>Optimización de decisiones mediante dashboards y reportes.</li>
+                        <li>Comunicación técnica y operativa entre áreas.</li>
+                        <li>Seguimiento de cronogramas, estándares y cumplimiento.</li>
+                    </ul>
+                </div>
+
+                <div class="visual-stack reveal">
+                    <img src="./assets/img/app.png" alt="Dashboard financiero usado como evidencia de control de movimientos" loading="lazy">
+                    <div class="stack-note">
+                        <strong>Enfoque:</strong> convertir datos de operación en reportes de seguimiento, alertas y lectura ejecutiva.
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section education-section" id="educacion">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-kicker">Formación</span>
+                    <h2>Base técnica y aprendizaje continuo.</h2>
+                </div>
+
+                <div class="education-grid">
+                    <article class="education-card primary reveal">
+                        <img src="https://unicordoba.edu.co/wp-content/uploads/2025/07/Escudo-unicordoba-2025-1.png" alt="Escudo Universidad de Córdoba" class="edu-logo" loading="lazy">
+                        <div>
+                            <span class="project-type">Pregrado</span>
+                            <h3>Ingeniero Mecánico</h3>
+                            <p>Universidad de Córdoba · 2024</p>
+                            <small>Formación técnica para análisis, diseño, mantenimiento y solución de problemas de ingeniería.</small>
+                        </div>
+                    </article>
+
+                    <article class="education-card reveal">
+                        <img src="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png" alt="Logo SENA" class="edu-logo sena-logo" loading="lazy">
+                        <div>
+                            <span class="project-type">Cursos técnicos</span>
+                            <h3>SENA</h3>
+                            <p>AutoCAD 2D · Metrología · Hidráulica industrial · Comunicación efectiva</p>
+                            <small>Complemento técnico y operativo orientado a mantenimiento, sistemas industriales y trabajo en equipo.</small>
+                        </div>
+                    </article>
+
+                    <article class="education-card reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <span class="project-type">Especialización complementaria</span>
+                            <h3>Eficiencia energética y análisis de datos</h3>
+                            <p>Diplomado en eficiencia energética industrial · Bootcamp de análisis de datos</p>
+                            <small>Formación orientada a optimización, lectura de información y toma de decisiones basada en datos.</small>
+                        </div>
+                    </article>
+
+                    <article class="education-card reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-language"></i></div>
+                        <div>
+                            <span class="project-type">Idiomas</span>
+                            <h3>Español nativo · Inglés B1</h3>
+                            <p>Comunicación técnica y profesional.</p>
+                            <small>Capacidad para documentar, presentar resultados y colaborar con equipos multidisciplinarios.</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <span class="section-kicker">Contacto</span>
+                    <h2>Hablemos de proyectos, datos o mejora operativa.</h2>
+                    <p>
+                        Estoy disponible para conversar sobre oportunidades donde pueda aportar desde la ingeniería,
+                        la gestión de proyectos, el análisis de datos y la creación de tableros ejecutivos.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:lorenzogomez1007@gmail.com">Enviar correo</a>
+                        <a class="btn btn-secondary light" href="tel:+573003711391">Llamar</a>
+                    </div>
+                </div>
+
+                <div class="contact-card reveal">
+                    <a href="mailto:lorenzogomez1007@gmail.com"><i class="fa-solid fa-envelope"></i> lorenzogomez1007@gmail.com</a>
+                    <a href="tel:+573003711391"><i class="fa-solid fa-phone"></i> (+57) 300 371 1391</a>
+                    <span><i class="fa-solid fa-location-dot"></i> Montería, Córdoba, Colombia</span>
+                    <div class="social-actions">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Lorenzo Gómez. Todos los derechos reservados.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="container footer-content">
+            <p>&copy; 2026 Lorenzo Gómez. Portafolio profesional.</p>
+            <a href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
+
+    <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" type="button" aria-label="Cerrar imagen"><i class="fa-solid fa-xmark"></i></button>
+        <img src="" alt="Vista ampliada del proyecto">
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

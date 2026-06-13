@@ -1,69 +1,93 @@
-// Smooth scroll mejorado
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
 
-// Animación de entrada a elementos
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Aplicar animaciones a cards
-document.querySelectorAll('.experience-card, .skill-category, .education-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(card);
-});
-
-// Manejo del formulario de contacto
-const form = document.querySelector('.contact-form');
-if (form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Aquí puedes integrar con un servicio de email como EmailJS
-        alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-        form.reset();
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('is-open');
+        navToggle.classList.toggle('is-open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
     });
 }
 
-// Efecto hover en navegación activa
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        const targetId = link.getAttribute('href');
+        const target = document.querySelector(targetId);
 
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.style.color = 'var(--text-color)';
-        if (link.getAttribute('href').slice(1) === current) {
-            link.style.color = 'var(--primary-color)';
-            link.style.fontWeight = '700';
+        if (!target) return;
+
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        if (navMenu && navToggle) {
+            navMenu.classList.remove('is-open');
+            navToggle.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
         }
     });
+});
+
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.16,
+    rootMargin: '0px 0px -40px 0px'
+});
+
+document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+
+const sections = document.querySelectorAll('main section[id]');
+const activeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+            link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+        });
+    });
+}, {
+    threshold: 0.32,
+    rootMargin: '-20% 0px -45% 0px'
+});
+
+sections.forEach(section => activeObserver.observe(section));
+
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = document.querySelector('.lightbox img');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+function closeLightbox() {
+    if (!lightbox || !lightboxImage) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+}
+
+document.querySelectorAll('[data-lightbox]').forEach(button => {
+    button.addEventListener('click', () => {
+        if (!lightbox || !lightboxImage) return;
+        const imageSrc = button.getAttribute('data-lightbox');
+        const alt = button.querySelector('img')?.getAttribute('alt') || 'Vista ampliada del proyecto';
+
+        lightboxImage.src = imageSrc;
+        lightboxImage.alt = alt;
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+    });
+});
+
+lightboxClose?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', event => {
+    if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeLightbox();
 });

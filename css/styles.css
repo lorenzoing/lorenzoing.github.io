@@ -1007,3 +1007,142 @@ textarea {
         text-align: center;
     }
 }
+
+/* ==================== EVIDENCIA DE INGENIERÍA ==================== */
+
+.skill-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--primary);
+    font-size: 0.88rem;
+    font-weight: 850;
+}
+
+.skill-inline-link i {
+    width: auto;
+    height: auto;
+    color: inherit;
+    background: transparent;
+    font-size: 0.8rem;
+}
+
+.engineering-evidence {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+    align-items: center;
+    margin-top: 28px;
+    padding: 28px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: var(--radius);
+    background:
+        radial-gradient(circle at top left, rgba(15, 95, 209, 0.10), transparent 34%),
+        linear-gradient(180deg, #ffffff, #f7fbff);
+    box-shadow: var(--shadow-soft);
+}
+
+.engineering-copy h3 {
+    margin: 14px 0 12px;
+    font-size: clamp(1.8rem, 3vw, 2.45rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.engineering-copy p {
+    color: var(--muted);
+    font-size: 0.98rem;
+}
+
+.engineering-points {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+.engineering-points li {
+    position: relative;
+    padding-left: 28px;
+    color: #42526a;
+    font-size: 0.94rem;
+}
+
+.engineering-points li::before {
+    content: "\f013";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: var(--primary);
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.82rem;
+}
+
+.engineering-poster {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 420px;
+    border: 0;
+    border-radius: calc(var(--radius) - 6px);
+    background: #eaf2ff;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+    cursor: zoom-in;
+}
+
+.engineering-poster img {
+    width: 100%;
+    height: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    background: #ffffff;
+    transition: transform 450ms ease;
+}
+
+.engineering-poster:hover img {
+    transform: scale(1.025);
+}
+
+.engineering-poster span {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    color: var(--white);
+    background: rgba(7, 17, 31, 0.82);
+    backdrop-filter: blur(10px);
+    font-size: 0.82rem;
+    font-weight: 850;
+}
+
+@media (max-width: 900px) {
+    .engineering-evidence {
+        grid-template-columns: 1fr;
+    }
+
+    .engineering-poster {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 520px) {
+    .engineering-evidence {
+        padding: 20px;
+    }
+
+    .engineering-poster {
+        min-height: 280px;
+    }
+
+    .engineering-poster span {
+        right: 12px;
+        bottom: 12px;
+        font-size: 0.76rem;
+    }
+}

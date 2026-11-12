@@ -1,415 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Lorenzo Gomez: ingenieria mecanica, gestion de proyectos, analisis de datos, dashboards, KPIs, Power BI, MySQL y automatizacion.">
-    <title>Lorenzo Gómez | Ingeniería, Proyectos y Analítica</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a3d">
+  <meta name="description" content="Soy Lorenzo Gómez, ingeniero mecánico de Montería. Conoce mi experiencia en coordinación de proyectos, manejo de información y proyectos de ingeniería.">
+  <meta name="author" content="Lorenzo Rafael Gómez Solano">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Lorenzo Gómez">
+  <meta property="og:title" content="Lorenzo Gómez | Ingeniero mecánico">
+  <meta property="og:description" content="Ingeniería mecánica, coordinación de proyectos y análisis de información. Experiencia, formación y trabajos seleccionados.">
+  <meta property="og:url" content="https://lorenzoing.github.io/">
+  <meta property="og:image" content="https://lorenzoing.github.io/assets/img/lorenzo_perfil.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://lorenzoing.github.io/">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png" sizes="48x48">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/script.js"></script>
+  <title>Lorenzo Gómez | Ingeniero mecánico y gestión de proyectos</title>
 </head>
 <body>
-    <header class="site-header" id="top">
-        <nav class="navbar container" aria-label="Navegación principal">
-            <a class="brand" href="#inicio" aria-label="Ir al inicio">
-                <span class="brand-mark">LG</span>
-                <span>
-                    <strong>Lorenzo Gómez</strong>
-                    <small>Ingeniería · Datos · Proyectos</small>
-                </span>
-            </a>
-
-            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-menu">
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Formación</a></li>
-                <li><a class="nav-cta" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero" id="inicio">
-            <div class="hero-bg-grid" aria-hidden="true"></div>
-            <div class="container hero-grid">
-                <div class="hero-copy reveal">
-                    <span class="eyebrow"><i class="fa-solid fa-chart-line"></i> Portafolio profesional</span>
-                    <h1>Ingeniería mecánica aplicada a proyectos, datos y mejora operativa.</h1>
-                    <p>
-                        Conecto la planeación técnica, el análisis de datos y la visualización ejecutiva para convertir
-                        información operativa en decisiones claras, medibles y accionables.
-                    </p>
-
-                    <div class="hero-tags" aria-label="Áreas principales">
-                        <span>Power BI</span>
-                        <span>MySQL</span>
-                        <span>KPIs</span>
-                        <span>Dashboards</span>
-                        <span>Automatización</span>
-                    </div>
-
-                    <div class="hero-actions">
-                        <a href="#portafolio" class="btn btn-primary">Ver proyectos</a>
-                        <a href="mailto:lorenzogomez1007@gmail.com" class="btn btn-secondary">Contactarme</a>
-                    </div>
-                </div>
-
-                <aside class="hero-panel reveal" aria-label="Resumen visual del perfil">
-                    <div class="profile-card">
-                        <div class="profile-photo-wrap">
-                            <img src="./assets/img/lorenzo_perfil.jpg" alt="Foto profesional de Lorenzo Gómez" class="profile-photo">
-                        </div>
-                        <div class="profile-info">
-                            <span class="availability"><i class="fa-solid fa-location-dot"></i> Montería, Colombia</span>
-                            <h2>Lorenzo Gómez</h2>
-                            <p>Ingeniero Mecánico · Coordinador de Proyectos · Analítica Operativa</p>
-                        </div>
-                    </div>
-
-                    <div class="hero-dashboard-card">
-                        <img src="./assets/img/KPI.png" alt="Vista de indicadores KPI comerciales y operativos" loading="lazy">
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <section class="impact-strip" aria-label="Indicadores destacados">
-            <div class="container impact-grid">
-                <article class="impact-item reveal">
-                    <strong>+5</strong>
-                    <span>Años integrando operación, proyectos y tecnología</span>
-                </article>
-                <article class="impact-item reveal">
-                    <strong>15+</strong>
-                    <span>Proyectos acompañados con seguimiento y mejora</span>
-                </article>
-                <article class="impact-item reveal">
-                    <strong>10+</strong>
-                    <span>Certificaciones y cursos técnicos complementarios</span>
-                </article>
-                <article class="impact-item reveal">
-                    <strong>360°</strong>
-                    <span>Lectura técnica, financiera y visual de la gestión</span>
-                </article>
-            </div>
-        </section>
-
-        <section class="section profile-section" id="perfil">
-            <div class="container two-column">
-                <div class="section-copy reveal">
-                    <span class="section-kicker">Perfil profesional</span>
-                    <h2>Un perfil técnico con enfoque en análisis, control y toma de decisiones.</h2>
-                    <p>
-                        Soy Ingeniero Mecánico con experiencia en coordinación de proyectos, seguimiento de productividad,
-                        control de indicadores y comunicación técnica con equipos de trabajo. Mi valor diferencial está en
-                        unir visión operativa con herramientas digitales para construir tableros, reportes y modelos de datos
-                        que facilitan decisiones oportunas.
-                    </p>
-                    <p>
-                        El sitio está diseñado para mostrar una historia clara: formación técnica, gestión de proyectos,
-                        manejo de datos, creación de KPIs y visualización profesional de resultados.
-                    </p>
-                </div>
-
-                <div class="capability-card reveal">
-                    <h3>Lo que puedo aportar</h3>
-                    <ul class="check-list">
-                        <li>Diseño de indicadores para seguimiento operativo y financiero.</li>
-                        <li>Creación de dashboards ejecutivos y reportes de gestión.</li>
-                        <li>Análisis de datos con Excel, Power BI, Looker Studio y MySQL.</li>
-                        <li>Planeación, control de cronogramas y seguimiento de proyectos.</li>
-                        <li>Comunicación técnica entre áreas operativas y administrativas.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section portfolio-section" id="portafolio">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="section-kicker">Portafolio visual</span>
-                    <h2>Dashboards, KPIs, modelos de datos y análisis visual.</h2>
-                    <p>
-                        Transformación de información dispersa en sistemas de control y lectura ejecutiva.
-                    </p>
-                </div>
-
-                <div class="portfolio-grid">
-                    <article class="project-card featured reveal">
-                        <button class="project-image" type="button" data-lightbox="./assets/img/app.png" aria-label="Ampliar dashboard financiero">
-                            <img src="./assets/img/app.png" alt="Dashboard financiero con balance diario y resumen del rango" loading="lazy">
-                        </button>
-                        <div class="project-body">
-                            <span class="project-type">Dashboard financiero</span>
-                            <h3>Control de movimientos y balance diario</h3>
-                            <p>
-                                Vista ejecutiva para seguimiento de ingresos, egresos, rangos de fechas y comportamiento diario.
-                                Demuestra capacidad para construir interfaces claras de análisis financiero.
-                            </p>
-                            <div class="tech-tags">
-                                <span>KPIs</span><span>Reportes</span><span>Gestión financiera</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <button class="project-image" type="button" data-lightbox="./assets/img/bd.png" aria-label="Ampliar modelo de base de datos">
-                            <img src="./assets/img/bd.png" alt="Modelo relacional de base de datos con múltiples tablas conectadas" loading="lazy">
-                        </button>
-                        <div class="project-body">
-                            <span class="project-type">Arquitectura de datos</span>
-                            <h3>Modelo relacional para sistema de gestión</h3>
-                            <p>
-                                Estructura de base de datos con entidades conectadas, útil para evidenciar comprensión de datos,
-                                relaciones, trazabilidad y escalabilidad de sistemas.
-                            </p>
-                            <div class="tech-tags">
-                                <span>MySQL</span><span>Modelo ER</span><span>Datos</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <button class="project-image" type="button" data-lightbox="./assets/img/grafico_barras.png" aria-label="Ampliar gráfico de barras y línea">
-                            <img src="./assets/img/grafico_barras.png" alt="Gráfico comparativo de barras y línea con valores mensuales" loading="lazy">
-                        </button>
-                        <div class="project-body">
-                            <span class="project-type">Analítica visual</span>
-                            <h3>Comparación mensual con barras y tendencias</h3>
-                            <p>
-                                Visualización para comparar valores, detectar picos y entender comportamiento por periodos.
-                                Refuerza habilidades en lectura de datos y comunicación visual.
-                            </p>
-                            <div class="tech-tags">
-                                <span>Visualización</span><span>Tendencias</span><span>Análisis</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <button class="project-image" type="button" data-lightbox="./assets/img/KPI.png" aria-label="Ampliar tablero de KPIs">
-                            <img src="./assets/img/KPI.png" alt="Tablero oscuro con tarjetas de KPIs comerciales y operativos" loading="lazy">
-                        </button>
-                        <div class="project-body">
-                            <span class="project-type">KPIs operativos</span>
-                            <h3>Tablero de seguimiento comercial y operativo</h3>
-                            <p>
-                                Indicadores para leads, ventas, proyectos, tickets y objetivos. Muestra dominio en seguimiento,
-                                metas, diferencias y lectura gerencial de desempeño.
-                            </p>
-                            <div class="tech-tags">
-                                <span>Metas</span><span>Productividad</span><span>Control</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section skills-section" id="habilidades">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="section-kicker">Competencias</span>
-                    <h2>Habilidades agrupadas por valor profesional.</h2>
-                </div>
-
-                <div class="skills-grid">
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <h3>Gestión de proyectos</h3>
-                        <p>Planeación, seguimiento de actividades, gestión de cronogramas, control de avances y comunicación con equipos.</p>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <h3>Datos y BI</h3>
-                        <p>Power BI, Looker Studio, Excel avanzado, MySQL, KPIs, análisis de tendencias y construcción de reportes.</p>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-gears"></i>
-                        <h3>Ingeniería y mantenimiento</h3>
-                        <p>
-                            Diseño mecánico, AutoCAD, SolidWorks, metrología, mantenimiento de equipos,
-                            sistemas hidráulicos y desarrollo de soluciones técnicas aplicadas.
-                        </p>
-                        <a class="skill-inline-link" href="#proyecto-greensolar">
-                            Ver evidencia universitaria <i class="fa-solid fa-arrow-down"></i>
-                        </a>
-                    </article>
-                    <article class="skill-card reveal">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Web, automatización e IA</h3>
-                        <p>HTML, CSS, JavaScript, WordPress, hosting, APIs, herramientas IA, Python, C++ y prototipos con Arduino.</p>
-                    </article>
-                </div>
-
-                <article class="engineering-evidence reveal" id="proyecto-greensolar">
-                    <div class="engineering-copy">
-                        <span class="section-kicker">Proyecto universitario</span>
-                        <h3>GreenSolar Agitator</h3>
-                        <p>
-                            Diseño y simulación de un sistema de agitación para un biorreactor alimentado
-                            con energía solar, desarrollado como proyecto universitario de ingeniería.
-                            Esta evidencia conecta diseño mecánico, análisis de funcionamiento, selección
-                            de componentes y comunicación técnica mediante póster académico.
-                        </p>
-
-                        <ul class="engineering-points">
-                            <li>Diseño conceptual de sistema mecánico de agitación.</li>
-                            <li>Aplicación de energía solar en un sistema electromecánico.</li>
-                            <li>Simulación y representación técnica del biorreactor.</li>
-                            <li>Comunicación visual de especificaciones técnicas del proyecto.</li>
-                        </ul>
-
-                        <div class="tech-tags">
-                            <span>Diseño mecánico</span>
-                            <span>SolidWorks</span>
-                            <span>Energía solar</span>
-                            <span>Biorreactor</span>
-                            <span>Simulación</span>
-                        </div>
-                    </div>
-
-                    <button class="engineering-poster" type="button" data-lightbox="./assets/img/DISEÑO.png" aria-label="Ampliar póster GreenSolar Agitator">
-                        <img src="./assets/img/DISEÑO.png" alt="Póster académico del proyecto GreenSolar Agitator" loading="lazy">
-                        <span>
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                            Ampliar póster
-                        </span>
-                    </button>
-                </article>
-            </div>
-        </section>
-
-        <section class="section experience-section" id="experiencia">
-            <div class="container two-column reverse-on-mobile">
-                <div class="experience-card reveal">
-                    <span class="section-kicker">Experiencia reciente</span>
-                    <h2>Coordinador de Proyectos</h2>
-                    <div class="role-meta">
-                        <span><i class="fa-solid fa-building"></i> Hamilton Colombia</span>
-                        <span><i class="fa-solid fa-location-dot"></i> Montería, Colombia</span>
-                        <span><i class="fa-solid fa-calendar"></i> Dic. 2024 - Ene. 2026</span>
-                    </div>
-                    <ul class="check-list">
-                        <li>Supervisión de productividad y desempeño de equipos.</li>
-                        <li>Optimización de decisiones mediante dashboards y reportes.</li>
-                        <li>Comunicación técnica y operativa entre áreas.</li>
-                        <li>Seguimiento de cronogramas, estándares y cumplimiento.</li>
-                    </ul>
-                </div>
-
-                <div class="visual-stack reveal">
-                    <img src="./assets/img/app.png" alt="Dashboard financiero usado como evidencia de control de movimientos" loading="lazy">
-                    <div class="stack-note">
-                        <strong>Enfoque:</strong> convertir datos de operación en reportes de seguimiento, alertas y lectura ejecutiva.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section education-section" id="educacion">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <span class="section-kicker">Formación</span>
-                    <h2>Base técnica y aprendizaje continuo.</h2>
-                </div>
-
-                <div class="education-grid">
-                    <article class="education-card primary reveal">
-                        <img src="https://unicordoba.edu.co/wp-content/uploads/2025/07/Escudo-unicordoba-2025-1.png" alt="Escudo Universidad de Córdoba" class="edu-logo" loading="lazy">
-                        <div>
-                            <span class="project-type">Pregrado</span>
-                            <h3>Ingeniero Mecánico</h3>
-                            <p>Universidad de Córdoba · 2024</p>
-                            <small>Formación técnica para análisis, diseño, mantenimiento y solución de problemas de ingeniería.</small>
-                        </div>
-                    </article>
-
-                    <article class="education-card reveal">
-                        <img src="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png" alt="Logo SENA" class="edu-logo sena-logo" loading="lazy">
-                        <div>
-                            <span class="project-type">Cursos técnicos</span>
-                            <h3>SENA</h3>
-                            <p>AutoCAD 2D · Metrología · Hidráulica industrial · Comunicación efectiva</p>
-                            <small>Complemento técnico y operativo orientado a mantenimiento, sistemas industriales y trabajo en equipo.</small>
-                        </div>
-                    </article>
-
-                    <article class="education-card reveal">
-                        <div class="edu-icon"><i class="fa-solid fa-bolt"></i></div>
-                        <div>
-                            <span class="project-type">Especialización complementaria</span>
-                            <h3>Eficiencia energética y análisis de datos</h3>
-                            <p>Diplomado en eficiencia energética industrial · Bootcamp de análisis de datos</p>
-                            <small>Formación orientada a optimización, lectura de información y toma de decisiones basada en datos.</small>
-                        </div>
-                    </article>
-
-                    <article class="education-card reveal">
-                        <div class="edu-icon"><i class="fa-solid fa-language"></i></div>
-                        <div>
-                            <span class="project-type">Idiomas</span>
-                            <h3>Español nativo · Inglés B1</h3>
-                            <p>Comunicación técnica y profesional.</p>
-                            <small>Capacidad para documentar, presentar resultados y colaborar con equipos multidisciplinarios.</small>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contacto">
-            <div class="container contact-grid">
-                <div class="contact-copy reveal">
-                    <span class="section-kicker">Contacto</span>
-                    <h2>Hablemos de proyectos, datos o mejora operativa.</h2>
-                    <p>
-                        Estoy disponible para conversar sobre oportunidades donde pueda aportar desde la ingeniería,
-                        la gestión de proyectos, el análisis de datos y la creación de tableros ejecutivos.
-                    </p>
-                    <div class="contact-actions">
-                        <a class="btn btn-primary" href="mailto:lorenzogomez1007@gmail.com">Enviar correo</a>
-                        <a class="btn btn-secondary light" href="tel:+57">Llamar</a>
-                    </div>
-                </div>
-
-                <div class="contact-card reveal">
-                    <a href="mailto:lorenzogomez1007@gmail.com"><i class="fa-solid fa-envelope"></i> lorenzogomez1007@gmail.com</a>
-                    <a href="tel:+573003711391"><i class="fa-solid fa-phone"></i> (+57) 300</a>
-                    <span><i class="fa-solid fa-location-dot"></i> Montería, Córdoba, Colombia</span>
-                    <div class="social-actions">
-                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Lorenzo Gómez. Portafolio profesional.</p>
-            <a href="#inicio">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-    </footer>
-
-    <div class="lightbox" aria-hidden="true">
-        <button class="lightbox-close" type="button" aria-label="Cerrar imagen"><i class="fa-solid fa-xmark"></i></button>
-        <img src="" alt="Vista ampliada del proyecto">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header" id="inicio">
+    <div class="container header-inner">
+      <a class="identity" href="#inicio" aria-label="Lorenzo Gómez, inicio">
+        <span class="monogram" aria-hidden="true">LG<span>.</span></span>
+        <span class="identity-name">Lorenzo Gómez<small>Ingeniero mecánico</small></span>
+      </a>
+      <nav class="nav" id="navegacion" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto" class="nav-contacto">Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="navegacion" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
+  </header>
 
-    <script src="./js/script.js"></script>
+  <main id="contenido">
+    <section class="hero section-tight" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Montería, Córdoba · Colombia</div>
+          <h1 id="hero-title">Soy Lorenzo Gómez.<br><span>Ingeniero mecánico.</span></h1>
+          <p class="hero-lead">He trabajado en coordinación de proyectos, seguimiento de actividades y organización de información para equipos de trabajo.</p>
+          <p class="hero-detail">Me interesa encontrar soluciones prácticas, entender cómo funcionan los procesos y llevar un registro claro de lo que se hace.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#trabajos">Conocer mis trabajos <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="./assets/docs/Lorenzo_Gomez_CV.pdf" target="_blank" rel="noopener" aria-label="Abrir hoja de vida en PDF (nueva pestaña)">Ver hoja de vida <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-facts" aria-label="Datos de perfil">
+            <div><strong>2024</strong><span>Egresado de Ingeniería Mecánica</span></div>
+            <div><strong>2024–2026</strong><span>Coordinación de proyectos</span></div>
+          </div>
+        </div>
+        <div class="hero-image-panel">
+          <div class="hero-image-decor" aria-hidden="true"></div>
+          <div class="portrait-frame"><img src="./assets/img/lorenzo_perfil.webp" width="768" height="1025" alt="Retrato de Lorenzo Gómez" fetchpriority="high"></div>
+          <div class="portrait-caption"><span class="caption-indicator" aria-hidden="true"></span><span>Lorenzo Rafael Gómez Solano<small>Ingeniería Mecánica · Universidad de Córdoba</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="section-label">01 / Sobre mí</div>
+        <div class="about-content">
+          <h2 id="about-title">Me gusta combinar el trabajo técnico con la organización de los proyectos.</h2>
+          <p>Me gradué de Ingeniería Mecánica en la Universidad de Córdoba en 2024. Después trabajé como coordinador de proyectos en Hamilton Colombia, donde hice seguimiento a tareas, tiempos y recursos, apoyé la organización de equipos y preparé información para informes.</p>
+          <p>También me interesa el uso de herramientas digitales para registrar datos, revisar avances y presentar la información de forma sencilla.</p>
+          <div class="strengths" aria-label="Áreas de trabajo">
+            <div class="strength"><span class="strength-num">01</span><h3>Coordinación</h3><p>Seguimiento de tareas, tiempos, recursos y novedades.</p></div>
+            <div class="strength"><span class="strength-num">02</span><h3>Información</h3><p>Organización de datos e informes de avance con herramientas ofimáticas.</p></div>
+            <div class="strength"><span class="strength-num">03</span><h3>Ingeniería</h3><p>Formación mecánica y proyectos académicos de diseño técnico.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="trabajos" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-label">02 / Trabajos seleccionados</div><h2 id="work-title">Algunos trabajos y muestras que he reunido.</h2></div>
+          <p>Un proyecto universitario y ejemplos visuales de información técnica. Las capturas permiten conocer las interfaces y esquemas incluidos en este portafolio.</p>
+        </div>
+
+        <article class="feature-work">
+          <div class="feature-text">
+            <div class="category"><span class="category-line"></span> Proyecto universitario / Ingeniería</div>
+            <h3>GreenSolar<br>Agitator</h3>
+            <p>Proyecto académico sobre un sistema de agitación para un biorreactor alimentado con energía solar. El póster muestra el esquema de funcionamiento, los componentes y una representación del equipo.</p>
+            <div class="chips"><span>Diseño mecánico</span><span>Energía solar</span><span>Biorreactor</span></div>
+            <button class="text-action" type="button" data-lightbox="./assets/img/greensolar-poster.webp" data-caption="Póster académico del proyecto GreenSolar Agitator">Ver póster completo <span aria-hidden="true">↗</span></button>
+          </div>
+          <button class="feature-visual zoomable" type="button" data-lightbox="./assets/img/greensolar-poster.webp" data-caption="Póster académico del proyecto GreenSolar Agitator" aria-label="Ampliar póster del proyecto GreenSolar Agitator">
+            <img src="./assets/img/greensolar-poster.webp" width="1587" height="2245" loading="lazy" alt="Póster académico de GreenSolar Agitator: esquema del sistema de agitación y representación del biorreactor">
+            <span class="image-action" aria-hidden="true">Ampliar <span>↗</span></span>
+          </button>
+        </article>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <button class="work-image zoomable" type="button" data-lightbox="./assets/img/app.webp" data-caption="Vista de balance diario de movimientos" aria-label="Ampliar captura de un panel de movimientos">
+              <img src="./assets/img/app.webp" width="1882" height="495" loading="lazy" alt="Interfaz de balance diario con gráfico de movimientos y resumen de ingresos y egresos"><span class="image-action" aria-hidden="true">Ampliar ↗</span>
+            </button>
+            <div class="work-card-copy"><span class="project-index">Muestra 01 · Interfaz</span><h3>Control de movimientos</h3><p>Una vista para consultar el balance diario y comparar ingresos y egresos por periodo.</p></div>
+          </article>
+          <article class="work-card">
+            <button class="work-image zoomable" type="button" data-lightbox="./assets/img/bd.webp" data-caption="Diagrama de un modelo de base de datos" aria-label="Ampliar diagrama de base de datos">
+              <img src="./assets/img/bd.webp" width="1762" height="837" loading="lazy" alt="Diagrama con tablas y relaciones de una base de datos"><span class="image-action" aria-hidden="true">Ampliar ↗</span>
+            </button>
+            <div class="work-card-copy"><span class="project-index">Muestra 02 · Datos</span><h3>Modelo de base de datos</h3><p>Diagrama de tablas relacionadas para organizar información dentro de un sistema.</p></div>
+          </article>
+        </div>
+
+        <div class="work-extras">
+          <div><span class="project-index">Otras muestras</span><h3>Visualización de indicadores</h3><p>Dos maneras de presentar datos: un tablero con indicadores y una comparación de valores mediante barras y líneas.</p></div>
+          <button class="extra-image zoomable" type="button" data-lightbox="./assets/img/KPI.webp" data-caption="Tablero de indicadores" aria-label="Ampliar tablero de indicadores"><img src="./assets/img/KPI.webp" width="1917" height="652" loading="lazy" alt="Tablero oscuro con tarjetas de indicadores y gráficas"><span aria-hidden="true">↗</span></button>
+          <button class="extra-image zoomable" type="button" data-lightbox="./assets/img/grafico_barras.webp" data-caption="Gráfico mensual de barras y líneas" aria-label="Ampliar gráfico mensual"><img src="./assets/img/grafico_barras.webp" width="1630" height="557" loading="lazy" alt="Comparación mensual de datos con barras azules y línea roja"><span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experiencia" aria-labelledby="experience-title">
+      <div class="container experience-layout">
+        <div><div class="section-label section-label-light">03 / Experiencia</div><h2 id="experience-title">Experiencia laboral</h2><p class="experience-summary">Una etapa centrada en la coordinación diaria de proyectos, el seguimiento de equipos y el registro de información.</p></div>
+        <div class="experience-detail">
+          <div class="experience-top"><div><span class="role-category">Hamilton Colombia S.A.S.</span><h3>Coordinador de proyectos</h3><span>Montería, Córdoba</span></div><time datetime="2024-12">Dic. 2024</time><span class="date-dash" aria-hidden="true">—</span><time datetime="2026-01">Ene. 2026</time></div>
+          <ul class="job-list"><li>Coordiné actividades administrativas y operativas y revisé el cumplimiento de las tareas programadas.</li><li>Hice seguimiento a tiempos, recursos, avances y novedades de los proyectos.</li><li>Organicé información para elaborar informes y apoyar la toma de decisiones.</li><li>Acompañé a los equipos de trabajo en la solución de situaciones operativas.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="formacion" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head education-heading"><div><div class="section-label">04 / Formación</div><h2 id="education-title">Formación y herramientas</h2></div><p>Mi formación principal es en ingeniería mecánica. La he complementado con cursos de herramientas técnicas, datos y comunicación.</p></div>
+        <div class="education-layout">
+          <article class="degree-card"><span class="degree-mark" aria-hidden="true">UC</span><div class="degree-body"><div class="category">Pregrado · 2024</div><h3>Ingeniería Mecánica</h3><p>Universidad de Córdoba</p><span>Montería, Colombia</span></div></article>
+          <div class="courses-list">
+            <article><span class="course-index">01</span><div><h3>Eficiencia energética industrial</h3><p>Diplomado · Universidad de Córdoba</p></div></article>
+            <article><span class="course-index">02</span><div><h3>Análisis de datos, nivel básico</h3><p>Bootcamp · Universidad Tecnológica de Bolívar</p></div></article>
+            <article><span class="course-index">03</span><div><h3>Formación SENA</h3><p>AutoCAD 2D, Introducción a la Industria 4.0, comunicación laboral, comunicación asertiva y English Does Work – Level 6.</p></div></article>
+          </div>
+        </div>
+        <div class="tools-row"><span>Herramientas utilizadas</span><div class="chips chips-tools"><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Herramientas de registro</span><span>AutoCAD 2D (formación)</span></div><p><strong>Idiomas:</strong> español nativo · inglés B1, según hoja de vida.</p></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div><div class="section-label">05 / Contacto</div><h2 id="contact-title">¿Hablamos?</h2><p>Si quieres conocer más sobre mi experiencia o tienes una oportunidad laboral, puedes escribirme o llamarme.</p><a href="mailto:lorenzogomez1007@gmail.com" class="button button-primary">Enviar un correo <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-links"><div><span>Correo</span><a href="mailto:lorenzogomez1007@gmail.com">lorenzogomez1007@gmail.com <span aria-hidden="true">↗</span></a></div><div><span>Teléfono</span><a href="tel:+573003711391">+57 300 371 1391 <span aria-hidden="true">↗</span></a></div><div><span>GitHub</span><a href="https://github.com/lorenzoing" target="_blank" rel="noopener noreferrer">github.com/lorenzoing <span aria-hidden="true">↗</span></a></div><div><span>Ubicación</span><p>Montería, Córdoba · Colombia</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 Lorenzo Gómez. Hecho con HTML, CSS y JavaScript.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+
+  <dialog class="image-dialog" id="image-dialog" aria-label="Vista ampliada de un trabajo"><div class="dialog-head"><span id="dialog-caption">Vista ampliada</span><button class="dialog-close" type="button" aria-label="Cerrar imagen">Cerrar ×</button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div></dialog>
 </body>
 </html>

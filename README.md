@@ -1,55 +1,44 @@
-# Portafolio — Lorenzo Gómez
+# Lorenzo Gómez
 
-Sitio estático alojado en GitHub Pages: https://lorenzoing.github.io/
+### Ingeniero mecánico | Coordinación de proyectos y análisis de información
 
-## Contenido
+Soy ingeniero mecánico egresado de la Universidad de Córdoba. Tengo experiencia en coordinación de proyectos, seguimiento de actividades, organización de equipos y elaboración de informes. Me interesan el trabajo técnico y el uso de herramientas digitales para organizar y presentar información.
 
-- `index.html`: contenido y estructura del portafolio.
-- `css/styles.css`: estilos y diseño adaptable a computador, tableta y móvil.
-- `js/script.js`: navegación móvil, sección activa y ampliación de imágenes.
-- `assets/img/`: imágenes optimizadas del portafolio.
-- `assets/docs/Lorenzo_Gomez_CV.pdf`: hoja de vida aportada para esta revisión.
-- `assets/icons/`: íconos del sitio.
-- `robots.txt` y `sitemap.xml`: archivos de rastreo para buscadores.
+📍 Montería, Córdoba, Colombia
 
-No requiere instalación, dependencias de Node ni compilación. Para verlo de forma local, abre `index.html` en un navegador.
+**[Visitar mi portafolio](https://lorenzoing.github.io/)**
 
-## Actualizar GitHub Pages rápidamente
+## Trabajos seleccionados
 
-**Opción con GitHub Desktop**
+### GreenSolar Agitator
 
-1. Abre GitHub Desktop y clona `lorenzoing/lorenzoing.github.io` si aún no lo has hecho.
-2. Crea una rama de respaldo o verifica que el estado previo esté confirmado en un commit.
-3. Extrae el contenido del ZIP de entrega **dentro de la carpeta raíz** del repositorio local, reemplazando `index.html`, `css/`, `js/` y `assets/`. No crees una carpeta intermedia.
-4. En GitHub Desktop revisa los cambios, crea un commit como `Rediseñar portafolio y actualizar contenido`, y pulsa **Push origin**.
-5. Si trabajaste en una rama, abre un pull request para integrar los cambios en `main`; si trabajaste en `main`, GitHub Pages publicará la versión de esa rama según la configuración existente.
+Proyecto universitario sobre un sistema de agitación para un biorreactor alimentado con energía solar. El portafolio incluye un póster con el esquema de funcionamiento y los componentes del equipo.
 
-**Opción con Git** (desde la carpeta raíz del repositorio después de copiar los archivos):
+### Interfaces y visualización de datos
 
-```bash
-git status
-git add -A
-git commit -m "Rediseñar portafolio y actualizar contenido"
-git push origin main
-```
+El sitio también reúne muestras visuales de un panel de movimientos, un modelo de base de datos y tableros de indicadores.
 
-Comprueba la publicación en https://lorenzoing.github.io/ y refresca con Ctrl+F5 si ves la versión en caché.
+## Experiencia profesional
 
-## Cambios de esta versión
+**Coordinador de proyectos — Hamilton Colombia S.A.S.**
 
-- Redacción personal basada en el CV, sin métricas no documentadas ni afirmaciones de habilidades sin evidencia.
-- Diseño renovado con navegación móvil y menos elementos decorativos.
-- Trabajos agrupados: proyecto universitario, capturas de interfaz, diagrama y visualizaciones.
-- Miniaturas WebP optimizadas y ventanas de ampliación accesibles con el teclado.
-- Enlaces de correo, teléfono, GitHub y hoja de vida corregidos.
-- SEO básico: descripción, URL canónica, datos Open Graph y favicon válido.
-- Eliminados archivos de un byte que no funcionaban.
+Diciembre de 2024 – enero de 2026
 
-## Información pendiente de confirmar antes de futuras ampliaciones
+Seguimiento de actividades, tiempos y recursos; organización de información y elaboración de reportes; apoyo a la coordinación de equipos y a la solución de situaciones operativas.
 
-- Autoría y participación exacta en cada interfaz, modelo de datos y visualización.
-- Tecnologías concretas usadas en esos trabajos (no se han atribuido sin respaldo).
-- Enlace real de LinkedIn, si se desea incluir.
-- Actualizaciones de experiencia, certificaciones y datos personales posteriores al CV aportado.
+## Formación académica
 
-**Importante:** el PDF de hoja de vida se publica como recurso descargable en un repositorio público. Verifica que te resulte adecuado compartir los datos de contacto incluidos.
+- **Ingeniería Mecánica** — Universidad de Córdoba, 2024.
+- **Diplomado en Eficiencia Energética Industrial** — Universidad de Córdoba.
+- **Bootcamp de Análisis de Datos, nivel básico** — Universidad Tecnológica de Bolívar.
+- **Formación complementaria SENA** — AutoCAD 2D, Industria 4.0, comunicación y English Does Work.
+
+## Herramientas
+
+Excel · Word · PowerPoint · Herramientas de registro y seguimiento · Formación en AutoCAD 2D
+
+## Contacto
+
+- **Correo:** [lorenzogomez1007@gmail.com](mailto:lorenzogomez1007@gmail.com)
+- **Portafolio:** [lorenzoing.github.io](https://lorenzoing.github.io/)
+- **GitHub:** [@lorenzoing](https://github.com/lorenzoing)

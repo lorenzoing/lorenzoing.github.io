@@ -11,22 +11,19 @@ Soy ingeniero mecánico egresado de la Universidad de Córdoba. Tengo experienci
 ## Trabajos seleccionados
 
 ### GreenSolar Agitator
-
 Proyecto universitario sobre un sistema de agitación para un biorreactor alimentado con energía solar. El portafolio incluye un póster con el esquema de funcionamiento y los componentes del equipo.
 
 ### Interfaces y visualización de datos
-
 El sitio también reúne muestras visuales de un panel de movimientos, un modelo de base de datos y tableros de indicadores.
 
-## Experiencia profesional
+## Experiencia
 
-**Coordinador de proyectos — Hamilton Colombia S.A.S.**
-
+**Coordinador de proyectos — Hamilton Colombia S.A.S.**  
 Diciembre de 2024 – enero de 2026
 
 Seguimiento de actividades, tiempos y recursos; organización de información y elaboración de reportes; apoyo a la coordinación de equipos y a la solución de situaciones operativas.
 
-## Formación académica
+## Formación
 
 - **Ingeniería Mecánica** — Universidad de Córdoba, 2024.
 - **Diplomado en Eficiencia Energética Industrial** — Universidad de Córdoba.

@@ -13,10 +13,10 @@ function closeMenu() {
 }
 
 menuButton?.addEventListener('click', () => {
-  const open = nav.classList.toggle('is-open');
-  menuButton.classList.toggle('is-open', open);
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  const isOpen = nav.classList.toggle('is-open');
+  menuButton.classList.toggle('is-open', isOpen);
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
 });
 
 navLinks.forEach(link => link.addEventListener('click', closeMenu));
@@ -37,9 +37,15 @@ if ('IntersectionObserver' in window) {
         else link.removeAttribute('aria-current');
       });
     }
-  }, { rootMargin: '-28% 0px -58% 0px', threshold: 0 });
+  }, { rootMargin: '-30% 0px -55% 0px', threshold: 0 });
   sections.forEach(section => observer.observe(section));
 }
+
+// Hide a failed external university logo, exposing the initials underneath it.
+document.querySelectorAll('[data-logo-fallback]').forEach(img => {
+  img.addEventListener('error', () => { img.hidden = true; });
+  if (img.complete && img.naturalWidth === 0) img.hidden = true;
+});
 
 const dialog = document.getElementById('image-dialog');
 const dialogImage = document.getElementById('dialog-image');
